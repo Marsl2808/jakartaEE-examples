@@ -19,11 +19,12 @@
             <br/><br/>
             Country:
             <h:selectOneMenu value="#{student.country}">
-                <f:selectItem itemValue="Brazil" itemLabel="Brazil"/>
-                <f:selectItem itemValue="France" itemLabel="France"/>
-                <f:selectItem itemValue="Germany" itemLabel="Germany"/>
-                <f:selectItem itemValue="India" itemLabel="India"/>
-                <f:selectItem itemValue="US" itemLabel="US"/>
+                <f:selectItems value="#{student.countryOptions}"/>
+<!--                 <f:selectItem itemValue="Brazil" itemLabel="Brazil"/> -->
+<!--                 <f:selectItem itemValue="France" itemLabel="France"/> -->
+<!--                 <f:selectItem itemValue="Germany" itemLabel="Germany"/> -->
+<!--                 <f:selectItem itemValue="India" itemLabel="India"/> -->
+<!--                 <f:selectItem itemValue="US" itemLabel="US"/> -->
             </h:selectOneMenu>
             <br/><br/>
             <h:commandButton value="Submit" action="student_response"/>
